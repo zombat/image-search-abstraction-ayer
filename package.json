@@ -1,6 +1,6 @@
 {
   "name": "image-search-zombat",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Free Code Camp Image Search Abstraction Layer API Project",
   "main": "image-search.js",
   "scripts": {
