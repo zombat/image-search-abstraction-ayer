@@ -1,0 +1,28 @@
+{
+  "name": "image-search-zombat",
+  "version": "1.0.1",
+  "description": "Free Code Camp Image Search Abstraction Layer API Project",
+  "main": "image-search.js",
+  "scripts": {
+    "test": "node image-search.js",
+    "start": "node image-search.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zombat/image-search-abstraction-ayer.git"
+  },
+  "keywords": [
+    "FreeCodeCamp"
+  ],
+  "author": "Raymond Rizzo",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/zombat/image-search-abstraction-ayer/issues"
+  },
+  "homepage": "https://github.com/zombat/image-search-abstraction-ayer#readme",
+  "dependencies": {
+    "express": "^4.15.2",
+    "mongodb": "^2.2.25",
+    "request": "^2.81.0"
+  }
+}
