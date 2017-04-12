@@ -1,1 +1,32 @@
-
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<title>Image Search Abstraction Layer - Free Code Camp, API Projects</title>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+<body class="bg-primary">
+<div class="row">
+	<div class="container-fluid col-lg-8 col-lg-offset-2">
+		<h1>API Basejump: Image Search Abstraction Layer</h1>
+		<h3>User stories:</h3>
+		<ol>
+			<li>I can get the image URLs, alt text and page urls for a set of images relating to a given search string</li> 
+			<li>I can paginate through the responses by adding a ?offset=2 parameter to the URL.</li>
+			<li>I can get a list of the most recently submitted search strings</li>
+		</ol>
+		<h3>Example usage:</h3>
+			<p>https://image-search-zombat.herokuapp.com/imagesearch?tags=dogs%20cats&ampoffset=1</p>
+			<p>https://image-search-zombat.herokuapp.com/latestsearches</p>
+			<p>https://image-search-zombat.herokuapp.com/about</p>
+		<h3>Example output for /imagesearch:</h3>
+		<p>[{"name":"Lexington Community Farm Â» Blog Archive Â» Why Dogs Are Not Allowed","webSearchUrl":"https://www.bing.com/cr?IG=F9A3DBC4184D46628EBDA751917217C0&CID=3E0787B38E116F5E03B28DD18F816E85&rd=1&h=7wa49NKhaThtkNhvwBfr7y0MLhloJrLZWwfExNP8H6c&v=1&r=https%3a%2f%2fwww.bing.com%2fimages%2fsearch%3fview%3ddetailv2%26FORM%3dOIIRPO%26q%3ddogs%26id%3d469C7CB0E3255C41427E0F0E94D1D5D207E6AFA8%26simid%3d608047729938730421&p=DevEx,5546.1","thumbnailUrl":"https://tse2.mm.bing.net/th?id=OIP.S2BsqhOmsBE8byT0pDuD7AEWEs&pid=Api","datePublished":"2012-01-28T12:00:00","contentUrl":"http://www.bing.com/cr?IG=F9A3DBC4184D46628EBDA751917217C0&CID=3E0787B38E116F5E03B28DD18F816E85&rd=1&h=sxzix7OXG6gAeGzIab2oW2NF_g7YvEAXohr89P1y-C0&v=1&r=http%3a%2f%2flexfarm.org%2fwp-content%2fuploads%2f2012%2f01%2fdog.jpg&p=DevEx,5548.1","hostPageUrl":"http://www.bing.com/cr?IG=F9A3DBC4184D46628EBDA751917217C0&CID=3E0787B38E116F5E03B28DD18F816E85&rd=1&h=ncpQZT0sj57ApVUiwimLXlgPirsDhLiFxuH_enM9tlM&v=1&r=http%3a%2f%2flexfarm.org%2f2012%2f01%2f28%2fwhy-dogs-are-not-allowed%2f&p=DevEx,5547.1","contentSize":"32440 B","encodingFormat":"jpeg","hostPageDisplayUrl":"lexfarm.org/2012/01/28/why-dogs-are-not-allowed","width":334,"height":360,"thumbnail":{"width":278,"height":300},"imageInsightsToken":"ccid_S2BsqhOm*mid_469C7CB0E3255C41427E0F0E94D1D5D207E6AFA8*simid_608047729938730421","imageId":"469C7CB0E3255C41427E0F0E94D1D5D207E6AFA8","accentColor":"3E0C61"},...]</p>
+		<h3>Example output /latestsearches:</h3>
+		<p>[{"term":"dogs puppies","when":"2017-04-11T20:37:46.754Z"},...]</p>
+	</div>
+	</div>
+</body>
+<footer>
+</footer>
+</html>
