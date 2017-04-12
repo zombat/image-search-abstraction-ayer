@@ -92,6 +92,12 @@ app.get('/imagesearch', function(httpRequest, httpResponse){
 		}	
 });
 
+app.get('/*', function(httpRequest, httpResponse){
+	// Handle improper input.
+	var errorObject = { 'error': 'Invalid input, for more information see https://image-search-zombat.herokuapp.com/about', 'received': httpRequest.url.substring(5, httpRequest.originalUrl.length)};
+		httpResponse.writeHead(200, { "Content-Type": "application/json" });
+		httpResponse.end(JSON.stringify(errorObject));
+});
 // Search Bing Image search.
 function searchBing(queryTags, callback) {
 	var searchUrl = 'https://api.cognitive.microsoft.com/bing/v5.0/images/search?q=' + queryTags + '&count=' + 100 + '&offset=0&mkt=en-us&safeSearch=Moderate';
